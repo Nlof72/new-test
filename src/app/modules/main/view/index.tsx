@@ -20,7 +20,7 @@ const MainPage = () => {
                 <div className="flex flex-col gap-3">
                     {
                         localData?.map(item => {
-                            return <GithubReositoryCard {...item} />
+                            return <GithubReositoryCard key={item.id} {...item} />
                         })
                     }
                 </div>
