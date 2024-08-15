@@ -21,9 +21,7 @@ export const useMainPagePresenter = ():IUseMainPagePresenter => {
       loading: isLoading,
       hasNextPage: hasMore,
       onLoadMore: () => {
-        setPage(prevState => {
-          console.log(prevState);
-  
+        setPage(prevState => {  
           return prevState + 1
         })
       },
